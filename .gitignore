@@ -1,0 +1,7 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+/*.egg-info
+/.DS_Store
+/__pycache__/
