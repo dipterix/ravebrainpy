@@ -3,5 +3,8 @@
 .RData
 .Ruserdata
 /*.egg-info
-/.DS_Store
-/__pycache__/
+/*.egg
+/*.pyc
+/dist/
+.DS_Store
+__pycache__

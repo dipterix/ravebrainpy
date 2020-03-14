@@ -1,17 +1,25 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 from setuptools import setup
 
 setup(
-  name='pythreebrain',
+  name='ravebrainpy',
   version='0.0.1',
   description='Python library to visualize FreeSurfer in web browser',
-  url='http://github.com/storborg/funniest',
+  url='',
   author='Zhengjia Wang',
   author_email='zhengjia.wang@rice.edu',
   license='MIT',
-  packages=['pythreebrain'],
+  packages=['ravebrainpy'],
   install_requires=[
-      'numpy',
+    'numpy', 'pandas', 'nibabel'
   ],
-  zip_safe=False
+  extras_require={
+    'with_jupyter' : ['IPython']
+  },
+  include_package_data=True,
+  zip_safe=False,
+  test_suite='nose.collector',
+  tests_require=['nose'],
 )
